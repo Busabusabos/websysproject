@@ -8,7 +8,7 @@ export default function Layout({ children }) {
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
+        <AppBar position="fixed">
           <Toolbar>
             <Link className="text-1xl font-bold mt-5 ml-5 mr-5" href="/">
               Dashboard
@@ -22,7 +22,7 @@ export default function Layout({ children }) {
           </Toolbar>
         </AppBar>
       </Box>
-      <div>{children}</div>
+      <div style={{ marginTop: "150px" }}>{children}</div>
     </div>
   );
 }
